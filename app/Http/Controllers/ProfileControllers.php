@@ -13,7 +13,10 @@ class ProfileControllers extends Controller
     {
         $user = Auth::user();
         if (!$user->profile) {
-            $user->profile->create();
+            $profile = new Profile();
+            $profile->user_id = $user->id;
+            $profile->bio = 'not bio yet';
+            $profile->save();
         }
 
         return view('profile', [
@@ -31,7 +34,7 @@ class ProfileControllers extends Controller
             $profile->user_id = $user->id;
         }
 
-        $profile->bio = $request->bio;
+        $profile->bio = $request->bio ?? 'not bio yet';
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
@@ -51,13 +54,20 @@ class ProfileControllers extends Controller
 
         // Mengecek apakah profil sudah ada, jika belum, maka dibuat
         if (!$user->profile) {
-            $user->profile->create([
-                'bio' => $request->input('bio'),
-            ]);
+            $profile = new Profile();
+            $profile->user_id = $user->id;
+            $profile->bio = $request->input('bio') ?? 'not bio yet';
+            if ($request->hasFile('image')) {
+                $image = $request->file('image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                $image->storeAs('public/profiles', $filename);
+                $profile->image = 'profiles/' . $filename;
+            }
+            $profile->save();
         } else {
             // Jika sudah ada, lakukan update
             $profile = $user->profile;
-            $profile->bio = $request->input('bio');
+            $profile->bio = $request->input('bio') ?? 'not bio yet';
 
             if ($request->hasFile('image')) {
                 $image = $request->file('image');

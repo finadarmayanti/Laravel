@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/follow">
                             <i class="fas fa-user"></i>
                             <img src="/images/friendlogo.png" alt="Messages" style="width: 30px; height: 30px;">
                         </a>
