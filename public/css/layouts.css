@@ -1,0 +1,55 @@
+.navbar-brand {
+    /* Mengatur logo menjadi bulat */
+    width: 40px; /* Sesuaikan ukuran logo bulat */
+    height: 40px; /* Sesuaikan ukuran logo bulat */
+    box-sizing: border-box; /* Memastikan bahwa lebar dan tinggi termasuk border dan padding */
+    border: 2px solid transparent; /* Membuat border transparan */
+    border-radius: 50%; /* Mengubah logo menjadi bulat */
+    overflow: hidden; /* Memastikan bahwa konten di dalamnya tidak keluar dari batas */
+}
+
+/* Ketika logo dihover, ubah warna border */
+.navbar-brand:hover {
+    border-color: black;
+}
+
+/* Mengatur tautan navbar agar terlihat lebih menarik */
+.navbar-nav .nav-link {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Memberikan efek hover pada tautan navbar */
+.navbar-nav .nav-link:hover {
+    background-color: #cad6e0;
+    color: white;
+}
+
+/* Mengatur jarak antara tautan navbar */
+.navbar-nav .nav-item {
+    margin-right: 400px; /* Jarak antara setiap nav-item */
+}
+
+/* Mengatur posisi navbar di bagian bawah */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Custom style untuk header Sociablesphere */
+header {
+    background-color: rgb(255, 255, 255); /* Warna latar belakang header */
+    color: #000000; /* Warna teks header */
+    padding: 20px 0; /* Padding atas dan bawah */
+    text-align: left; /* Teks kiri */
+    font-family: 'Times New Roman', sans-serif; /* Mengatur font */
+    font-size: 14px; /* Ukuran font */
+    position: fixed; /* Tetap di posisinya */
+    top: 0; /* Atur ke bagian atas */
+    width: 100%; /* Lebar sesuai dengan halaman */
+    z-index: 1000; /* Pastikan tampil di atas elemen lain */
+        padding-top: 10px;
+    
+}

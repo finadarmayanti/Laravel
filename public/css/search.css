@@ -1,0 +1,79 @@
+/* Container styling */
+.container {
+    margin-top: 20px;
+}
+
+/* Search form styling */
+.search-form {
+    margin-top: 120px; /* Adjusted spacing from the top of the screen */
+    text-align: center;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 90%; /* Reduced input width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style for search icon */
+.search-form button img {
+    width: 45px; /* Set image width */
+    height: 45px; /* Set image height */
+    vertical-align: middle; /* Align image to the middle */
+    margin-right: 5px; /* Add space between image and text */
+    border: none; /* Remove border */
+}
+
+/* Remove border on search button */
+.search-form button {
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Search results styling */
+.search-results {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.search-results h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.no-results {
+    font-size: 18px;
+    color: #999;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-list li {
+    margin: 10px 0;
+}
+
+.user-list a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    transition: color 0.3s, background-color 0.3s, transform 0.1s;
+}
+
+.user-list a:hover {
+    color: #0056b3;
+}
+
+.user-list a:active {
+    background-color: #e0e0e0; /* Change background color when clicked */
+    transform: scale(0.98); /* Slightly scale down the link when clicked */
+    transition: transform 0.1s; /* Smooth transition for the scaling effect */
+}

@@ -1,0 +1,140 @@
+/* Adjusting container for better layout */
+.container {
+    margin-top: 20px;
+    padding: 0 15px;
+    margin-bottom: 20px; /* Add margin at the bottom of the container */
+}
+
+/* Common card styling */
+.card {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Make both create post and post cards full width */
+.create-post-card {
+    margin-top: 90px;
+}
+
+.post-card {
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Post header styling */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Card text styling */
+.card-text {
+    margin-bottom: 20px;
+}
+
+/* Image styling within posts */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Post actions styling */
+.post-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.post-actions button {
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-primary,
+.btn-danger,
+.btn-info {
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+/* Alert styling */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-success .btn-close,
+.alert-danger .btn-close {
+    color: inherit;
+}
+
+/* Custom sizes for like and dislike icons */
+.action-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Comment styling */
+.comment {
+    border-top: 1px solid #05101b;
+    padding-top: 10px;
+    margin-top: 10px;
+}

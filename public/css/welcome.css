@@ -1,0 +1,82 @@
+body {
+    background-image: url('../images/sosmed.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.64); /* Warna hitam transparan (RGBA) */
+    z-index: -1; /* Mengatur lapisan putih ke belakang gambar latar belakang */
+}
+
+.container {
+    position: relative; /* Tambahkan posisi relatif untuk kontainer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #FF1493; /* Deep pink */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.button:hover {
+    background-color: #FF69B4; /* Hot pink */
+}
